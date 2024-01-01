@@ -30,4 +30,4 @@ jobs:
                   context: .
                   file: ./.examples/dockerfiles/full/apache/Dockerfile
                   push: true
-                  tags: $/nextcloud-full:latest
+                  tags: ${{ secrets.DOCKERHUB_USERNAME }}/nextcloud-full:latest
