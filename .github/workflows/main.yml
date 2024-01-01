@@ -27,7 +27,7 @@ jobs:
                 name: Build and push
                 uses: docker/build-push-action@v4
                 with:
-                  context: .
-                  file: ./.examples/dockerfiles/full/apache/Dockerfile
+                  context: ./.examples/dockerfiles/full/apache/
+                  file: ./Dockerfile
                   push: true
                   tags: ${{ secrets.DOCKERHUB_USERNAME }}/nextcloud-full:latest
