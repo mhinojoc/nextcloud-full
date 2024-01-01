@@ -1,9 +1,9 @@
 name: nextcloud-full
 
-on: # specify the build to trigger the automated ci/cd
-    push:
-        branches:
-            - "main"
+on: workflow_dispatch # specify the build to trigger the automated ci/cd
+#    push:
+#        branches:
+#            - "main"
 
 jobs:
     build:
